@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏</title>
+    <link rel="stylesheet" href="snake_game.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>贪吃蛇游戏</h1>
+        <div class="game-info">
+            <div class="score">得分: <span id="score">0</span></div>
+            <div class="high-score">最高分: <span id="high-score">0</span></div>
+        </div>
+        <canvas id="game-canvas" width="400" height="400"></canvas>
+        <div class="controls">
+            <p>使用方向键控制蛇的移动</p>
+            <button id="start-btn">开始游戏</button>
+            <button id="reset-btn">重置游戏</button>
+        </div>
+        <div class="instructions">
+            <h3>游戏规则:</h3>
+            <ul>
+                <li>使用方向键控制蛇的移动</li>
+                <li>吃到食物后，蛇会变长，得分增加</li>
+                <li>如果蛇碰到墙壁或自己的身体，游戏结束</li>
+            </ul>
+        </div>
+    </div>
+    <script src="snake_game.js"></script>
+</body>
+</html>
