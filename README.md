@@ -48,14 +48,17 @@ Agent 将自动执行以下步骤：
 ### 修改模型接口
 
 默认连接本地 `http://localhost:1234`，您可以在 `main()` 函数中修改：
-
+```javascript
+// 这是一个示例 JavaScript 函数
 var agent = new ReActAgent({
   model: ‘qwen/qwen3-coder-30b’,
   projectDirectory: projectDir,
   endpoint: ‘http://localhost:1234/v1/chat/completions’
 });
-
+```
 ### 注册新工具
+```javascript
+// 这是一个示例 JavaScript 函数
 agent.registerTool(
     'search_web',
     '(query)',
@@ -65,7 +68,7 @@ agent.registerTool(
         callback(null, '搜索结果...');
     }
 );
-
+```
 ### 修改系统提示词
 编辑 REACT_SYSTEM_PROMPT_TEMPLATE 变量以调整 Agent 行为。
 
