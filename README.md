@@ -19,7 +19,7 @@
 确保已安装 Node.js (v12+) 并启动了本地 LLM 服务（默认端口 `1234`）。
 
 ### 2. 获取代码
-[git clone https://github.com/assassindesign/Agentjs](https://github.com/assassindesign/Agentjs.git)
+git clone https://github.com/assassindesign/Agentjs.git
 
 ### 3. 运行 Agent
 node agent.js /path/to/your/project
